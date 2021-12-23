@@ -248,13 +248,12 @@ print("Python version: ", sys.version_info)
 print("Python keywords: ", keyword.kwlist)
 """, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 # id 為 "keyword" 的按鈕點按時, 執行 kw1 物件中的 prog 方法
-doc["keyword"].bind('click', kw1.prog)
 </script>
 </p>
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/Xiang0502/5dc82b4e7555ede334730d407408f7e3/raw/7351ea03dffebd8fd8bb34b51397e024936201c8/W13"
+url = "https://gist.githubusercontent.com/41023146/8d18ed1cdd15e4668b7c6c60e73f67bf/raw/b7a10cf0dc9f31d3058c023e833c378012bfe1c1/w13"
 src = open(url).read()
 w13 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w13"].bind("click", w13.prog)
@@ -262,12 +261,28 @@ document["w13"].bind("click", w13.prog)
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/yckaooooo/9f170d4d138d1b8055bf362a69adb1b2/raw/3591f95cbf372e279af5ed848424722fbe5cd6f8/w13"
+url = "https://gist.githubusercontent.com/41023146/1ebbd8e6257dfb60182d29e6a9aaff00/raw/463bbe624e68ddb62b6b26a50253afd8def6e8a6/w13-2"
 src = open(url).read()
 w13_2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w13_2"].bind("click", w13_2.prog)
 </script>
-<p><button id="keyword">Keyword</button><button id="w13">列出 10 個座標</button><button id="w13_2">畫表格</button></p><h1>Final Project</h1>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/4e438641ea1dd0b2bd3ed476df6f020d/raw/09bc6cb4433ab6eb737e4d388ee289f478448312/w13"
+src = open(url).read()
+w13_3 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w13_3"].bind("click", w13_3.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/d4f132d12c1e443f7ac47d8ef1d60a5a/raw/b4557beb918661a3084fcf9cf001f021f6df15ec/w13-4"
+src = open(url).read()
+w13_4 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w13_4"].bind("click", w13_4.prog)
+</script>
+<p><button id="w13">列出 10 個座標</button><button id="w13_2">畫表格</button><button id="w13_3">隨機生成方格</button><button id="w13_4">隨機生成方格plus</button></p><h1>Final Project</h1>
 <p>Final Project 佔學期成績 30%</p>
 <p><span style="background-color: #ffff99;">Final Project 必須在 2022.01.05 22:00 之前完成</span>.</p>
 <p><a href="https://github.com/mdecourse/cp2021/discussions/11">Final Project 具體項目成果回報區</a>將於 2021.11.09 開啟, 於 <span style="background-color: #ff99cc;">2022.01.05 22:00 關閉</span></p>
